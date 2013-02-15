@@ -21,6 +21,7 @@ Or install it yourself as:
 
     require 'resque/failure/redis'
     require 'resque/failure/ratchetio'
+    require 'resque/failure/multiple'
 
     Resque::Failure::Multiple.classes = [Resque::Failure::Redis, Resque::Failure::Ratchetio]
     Resque::Failure.backend = Resque::Failure::Multiple
