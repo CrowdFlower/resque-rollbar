@@ -6,7 +6,7 @@ Adds Ratcherio as a failure backend to redis
 
 Add this line to your application's Gemfile:
 
-    gem 'resque-ratchetio'
+    gem 'resque-ratchetio', git: "git://github.com/CrowdFlower/resque-ratchetio.git"
 
 And then execute:
 
