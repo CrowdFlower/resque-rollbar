@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'resque-ratchetio/version'
+require 'resque-rollbar/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "resque-ratchetio"
-  gem.version       = Resque::Ratchetio::VERSION
+  gem.name          = "resque-rollbar"
+  gem.version       = Resque::Rollbar::VERSION
   gem.authors       = ["Brian Hahn"]
   gem.email         = ["brian.hahn@crowdflower.com"]
-  gem.description   = "Adds ratchetio as a resque failure backend"
-  gem.summary       = "Adds ratchetio as a resque failure backend"
+  gem.description   = "Adds rollbar as a resque failure backend"
+  gem.summary       = "Adds rollbar as a resque failure backend"
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

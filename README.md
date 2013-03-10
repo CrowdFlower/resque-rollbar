@@ -1,12 +1,12 @@
-# Resque::Ratchetio
+# Resque::Rollbar
 
-Adds Ratcherio as a failure backend to redis
+Adds Rollbar as a failure backend to redis
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'resque-ratchetio', git: "git://github.com/CrowdFlower/resque-ratchetio.git"
+    gem 'resque-rollbar', git: "git://github.com/CrowdFlower/resque-ratchetio.git"
 
 And then execute:
 
@@ -16,10 +16,10 @@ And then execute:
 
 
     require 'resque/failure/redis'
-    require 'resque/failure/ratchetio'
+    require 'resque/failure/rollbar'
     require 'resque/failure/multiple'
 
-    Resque::Failure::Multiple.classes = [Resque::Failure::Redis, Resque::Failure::Ratchetio]
+    Resque::Failure::Multiple.classes = [Resque::Failure::Redis, Resque::Failure::Rollbar]
     Resque::Failure.backend = Resque::Failure::Multiple
 
 ## Contributing

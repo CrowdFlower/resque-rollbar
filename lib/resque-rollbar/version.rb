@@ -1,5 +1,5 @@
 module Resque
-  module Ratchetio
+  module Rollbar
     VERSION = "0.0.1"
   end
 end
