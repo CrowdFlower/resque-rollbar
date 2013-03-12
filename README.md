@@ -6,7 +6,7 @@ Adds Rollbar as a failure backend to redis
 
 Add this line to your application's Gemfile:
 
-    gem 'resque-rollbar', git: "git://github.com/CrowdFlower/resque-ratchetio.git"
+    gem 'resque-rollbar', git: "git://github.com/CrowdFlower/resque-rollbar.git"
 
 And then execute:
 
