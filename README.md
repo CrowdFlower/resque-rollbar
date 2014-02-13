@@ -22,6 +22,10 @@ And then execute:
     Resque::Failure::Multiple.classes = [Resque::Failure::Redis, Resque::Failure::Rollbar]
     Resque::Failure.backend = Resque::Failure::Multiple
 
+## Passing custom information from exceptions
+
+If you raise an exception that responds to `exception.notifier_params` it will be passed in along with the payload resque generates.
+
 ## Contributing
 
 1. Fork it
