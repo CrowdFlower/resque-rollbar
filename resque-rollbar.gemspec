@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
-  gem.add_dependency("resque", ">= 1.23.0", "<= 1.25.0")
+  gem.add_dependency("resque", ">= 1.23.0", "<= 1.25.2")
 end
